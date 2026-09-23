@@ -1,0 +1,8 @@
+.venv/
+.idea/
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+named_regime_simulations/*.pkl.gz
+named_regime_mp4s/
