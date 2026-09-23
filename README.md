@@ -4,7 +4,7 @@ A simulation project exploring how social networks and recommendation algorithms
 
 ## Start here
 
-Open **`project_hybrid_social_recommender_FINAL.ipynb`** for the most developed analysis and its saved plots, tables, and animations. This separate project preserves the original notebooks and their outputs. Earlier project versions are included for reference; homework assignments and unrelated personal data are excluded.
+Open **`project_hybrid_social_recommender_FINAL.ipynb`** for the most developed analysis and its saved plots, tables, and animations. This separate project preserves the original notebooks and their outputs. Earlier project versions are included for reference.
 
 ## Models
 
