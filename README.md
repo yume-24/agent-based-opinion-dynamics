@@ -1,4 +1,4 @@
-# Virtual Earth — Opinion Dynamics
+# Algorithmic Opinion Dynamics
 
 A simulation project exploring how social networks and recommendation algorithms influence opinion formation, polarization, and changes in individual views. The models use synthetic agents and content; they do not require an external dataset.
 
@@ -19,7 +19,7 @@ The baseline comparison crosses two dimensions: discrete versus continuous opini
 | 4B | Social-neighbor influence only |
 | 4C | Hybrid content and social influence |
 
-The main hybrid model explores heterogeneous agent traits, recommendation strategies, social graph structure, dynamic homophily, and changing stubbornness. Results include opinion means, variance, extremity, disagreement, and regime-level summaries. These are theoretical simulations, not predictions fitted to a real platform.
+The main hybrid model used for the paper explores heterogeneous agent traits, recommendation strategies, social graph structure, dynamic homophily, and changing stubbornness. Results include opinion means, variance, extremity, disagreement, and regime-level summaries. These are theoretical simulations, not predictions fitted to a real platform or based on real data.
 
 ## Files
 
@@ -56,8 +56,4 @@ For a standalone six-regime export, run `self_contained_six_regime_animation_exp
 
 The minimal exporter requires bundles first. In the main notebook, execute the prerequisites and the final simulation-save section with `RUN_AND_SAVE_NAMED_REGIMES = True`. Check that the six `.pkl.gz` files exist in `named_regime_simulations/`, then use `minimal_named_regime_animation_export.ipynb`. Set the flag to `False` when reusing saved simulations. The exporters can use the FFmpeg executable supplied by `imageio-ffmpeg`.
 
-## Current notebook limitations
 
-The notebooks were copied without changing their code or saved results. A static check found unmatched triple quotes at the beginning of code cell 109 and the end of code cell 119 in the main notebook (counting all notebook cells from 1). They appear to bracket the parameter-search section across separate cells, which Python cannot parse as a single string. Remove those two delimiters before executing that section. An unmodified top-to-bottom run will stop there.
-
-This separation was verified by checking file contents and notebook structure; a full simulation and animation rerun has not been performed, and a fresh dependency installation has not been tested.
